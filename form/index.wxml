@@ -1,0 +1,8 @@
+<!-- lview/formid/formid.wxml -->
+<form report-submit bindsubmit="submit">
+    <button class="button" formType="submit">
+        <view>
+            <slot></slot>
+        </view>
+    </button>
+</form>

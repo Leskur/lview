@@ -1,0 +1,20 @@
+<!-- component/navbar/navbar.wxml -->
+<view style="height:{{navbarHeight}}px;padding-top:{{statusBarHeight}}px; padding-left:{{back?'7px':''}};" class="l-navbar {{fixed?'fixed':''}} exclass">
+  <l-form>
+    <view class="title-bar" wx:if="{{back}}">
+      <view class="title-bar-item ">
+        <!-- <l-form> -->
+        <navigator class="iconfont iconfanhui" hover-class="none" open-type="navigateBack" delta="{{delta}}"></navigator>
+        <!-- </l-form> -->
+      </view>
+      <view class="title-bar-item">
+        <!-- <l-form> -->
+        <navigator wx:if="{{true}}" class=" iconfont iconshouye" hover-class="none" open-type="reLaunch" url="/page/index"></navigator>
+        <!-- </l-form> -->
+      </view>
+    </view>
+  </l-form>
+  <view class="navbar-title">
+    <slot></slot>
+  </view>
+</view>

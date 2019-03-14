@@ -1,0 +1,7 @@
+/* component/page/index.wxss */
+.l-page{
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical
+}

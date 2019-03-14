@@ -1,0 +1,64 @@
+/* component/navbar/navbar.wxss */
+@import "../iconfonts.wxss";
+
+.l-navbar {
+  /* position: absolute; */
+  color: #fff;
+  background-color: #353535;
+  box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  padding: 20px calc(7px + 87px) 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.navbar-title {
+  font-weight:500;
+  -webkit-box-flex: 1;
+  font-size: 18.5px;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  padding: 0 7px;
+}
+
+.title-bar{
+  width: 87px;
+  height: 32px;
+  border-radius: 16px;
+  display: -webkit-box;
+  box-sizing: border-box;
+  border: 1rpx solid #575757;
+  background-color:rgba(0, 0, 0, .15);
+  -webkit-box-align: center;
+}
+
+.title-bar .title-bar-item{
+  -webkit-box-flex: 1;
+  text-align: center;
+  position: relative;
+}
+.title-bar .title-bar-item:first-child:after{
+  content: '';
+  position: absolute;
+  width: 1rpx;
+  background-color:#575757;
+  height: 80%;
+  top: 10%;
+  right: 0;
+}
+
+.btn-submit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  background-color: transparent;
+  line-height: initial;
+}

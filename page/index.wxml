@@ -1,0 +1,4 @@
+<!-- component/page/index.wxml -->
+<view class="l-page l-class" style="width:{{windowWidth}}px;height:{{windowHeight}}px;">
+    <slot></slot>
+</view>

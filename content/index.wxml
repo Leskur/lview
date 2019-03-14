@@ -1,0 +1,6 @@
+<!-- component/content/index.wxml -->
+<view class="l-class" style="height:{{contentHeight}}px">
+    <scroll-view scroll-y>
+        <slot></slot>
+    </scroll-view>
+</view>

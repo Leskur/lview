@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "l-content": "../content/index",
+    "l-navbar": "../navbar/index"
+  }
+}

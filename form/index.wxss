@@ -1,0 +1,8 @@
+/* lview/formid/formid.wxss */
+.button{
+    background-color: transparent;
+    line-height: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0;
+}

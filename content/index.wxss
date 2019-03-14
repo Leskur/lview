@@ -1,0 +1,16 @@
+/* component/content/index.wxss */
+l-content{
+    display: block;
+    -webkit-box-flex: 1;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    height: 100%;
+}
+
+scroll-view{
+    overflow: hidden;
+    -webkit-box-flex: 1;
+}
