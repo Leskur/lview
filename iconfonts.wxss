@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'iconfont';  /* project id 1083521 */
+    font-family: 'iconfont';
     src: url('//at.alicdn.com/t/font_1083521_uam0xjpc6qq.eot');
     src: url('//at.alicdn.com/t/font_1083521_uam0xjpc6qq.eot?#iefix') format('embedded-opentype'),
     url('//at.alicdn.com/t/font_1083521_uam0xjpc6qq.woff2') format('woff2'),
