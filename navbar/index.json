@@ -1,6 +1,4 @@
 {
   "component": true,
-  "usingComponents": {
-    "l-form": "../form/index"
-  }
+  "usingComponents": {}
 }

@@ -1,15 +1,16 @@
-const form = require("../../model/wechat/form");
 const page = require("../../utils/page");
-const app = getApp();
-const { regeneratorRuntime } = app;
 Component({
   // 组件属性
   properties: {
     title: {
       type: String,
-      value: "富有青年"
+      value: ""
     },
     back: {
+      type: Boolean,
+      value: true
+    },
+    fill: {
       type: Boolean,
       value: true
     },
@@ -17,9 +18,17 @@ Component({
       type: Number,
       value: 1
     },
-    exstyle: {
+    lStyle: {
       type: String,
       value: ""
+    },
+    backgroundColor: {
+      type: String,
+      value: "#353535"
+    },
+    color: {
+      type: String,
+      value: "#fff"
     },
     fixed: {
       type: Boolean,
@@ -31,33 +40,22 @@ Component({
     navbarHeight: 64
   },
   methods: {
-    init: function () {
-      const res = wx.getSystemInfoSync()
-      let { system, model, statusBarHeight } = res
-      this.setData({ statusBarHeight })
+    init: function() {
+      const res = wx.getSystemInfoSync();
+      let { system, model, statusBarHeight } = res;
+      this.setData({ statusBarHeight });
       if (/iOS/.test(system)) {
         this.setData({
           navbarHeight: /X|unknown/.test(model) ? 88 : 64
-        })
-      }
-      else if (/Android/.test(system)) this.setData({
-        navbarHeight: 68
-      })
-    },
-    formSubmit: async function (e) {
-
-      let formId = e.detail.formId;
-      console.log(formId)
-      let user = await app.getGlobalUser();
-      if (user)
-        form.create({
-          user_id: user._id.$id,
-          form_id: formId
+        });
+      } else if (/Android/.test(system))
+        this.setData({
+          navbarHeight: 68
         });
     }
   },
-  ready: function () {
-    this.init()
+  ready: function() {
+    this.init();
     if (page.count() == 1)
       this.setData({
         back: false
